@@ -1,0 +1,42 @@
+# Site settings
+title: Have been Marketing
+tagline: 합니의 백수탈출 대작전
+description: "부르주아를 꿈꾸는 백수의 백수탈출기."
+url: "https://have-been.com"
+author:
+  name: "Habin"
+  email: "habnipark@gmail.com"
+  url: "https://have-been.com"
+
+# Build settings
+baseurl: /
+markdown: kramdown
+permalink: /:title
+paginate: 8
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Custom variables
+version: "1.1.0"
+
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
+
+# Blog disqus shortname
+disqus:
+  shortname: have-been-marketing
