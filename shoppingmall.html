@@ -1,0 +1,66 @@
+<!-- GTM 상품상세정보 start -->
+<script>
+  // 상품 변수 정의
+  var productsInfo = [];
+  var fbViewContent = [];
+  var productName = "{goodsView['goodsNm']}";
+  var productId = "{{goodsView.goodsNo}";
+  var productPrice = "{=gd_money_format(gd_isset(goodsView['goodsPrice'],0),false)}";
+  var productCategory = "{=goodsView['cateCd']}";
+
+  // GA용 상품 데이터 추가
+  productsInfo.push({
+    'name': productName,
+    'id': productId,
+    'price': productPrice,
+    'category': productCategory
+  });
+
+  // FB용 상품 데이터 추가
+  fbViewContent.push({
+    'content_name': productName,
+    'content_category': productCategory,
+    'content_ids': productId,
+    'content_type': 'product',
+    'value': productPrice,
+    'currency': 'KRW'
+  });
+
+  // GTM dataLayer 변수로 전달
+  dataLayer.push({
+    'event': 'detail',
+    'ecommerce': {
+      'detail': {
+        'actionField': {'list': 'goodsDetail'},
+        'products': productsInfo
+       }
+     },
+     'fbViewContent': fbViewContent,
+     'productsInfo': productsInfo
+  });
+
+  // 장바구니 담기 이벤트 함수
+  var addToCart = function(){
+    if (productsInfo.length == 2) {
+      productsInfo.pop();
+      productsInfo.push({
+        'quantity': goodsTotalCnt
+      });
+    } else {
+      productsInfo.push({
+        'quantity': goodsTotalCnt
+      });
+    }
+    dataLayer.push({
+      'event': 'addToCart',
+      'ecommerce': {
+        'currencyCode': 'KRW',
+        'add': {
+          'products': productsInfo
+        }
+      },
+      'fbAddToCart': fbViewContent,
+    });
+  }
+</script>
+<!-- GTM 상품상세정보 end -->
