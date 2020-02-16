@@ -6,7 +6,7 @@ author:             "Habni"
 baseurl:            "/"
 url:                "https://have-been.com"
 locale:             "en_us"
-thumbnail:          "/img/HBthumb.png"
+thumbnail:          "/img/thumbnail.png"
 
 
 
