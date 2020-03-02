@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /personalbranding-알바꿀팁/
+permalink: /personalbranding-parttimejob/
 title: '알바마스터의 알바 구하는 방법 : 알바구하기 TIP!'
 date: 2020-03-02 10:00:00 +09:00
 feature: '/img/posts/004/04thumb.jpg'
