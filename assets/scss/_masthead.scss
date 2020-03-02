@@ -33,6 +33,15 @@ header.masthead {
     background-color: $gray-900;
     opacity: 0;
   }
+  .overlayP {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $gray-900;
+    opacity: 0.6;
+  }
   .page-heading,
   .post-heading,
   .site-heading {
@@ -86,7 +95,7 @@ header.masthead {
     }
     @media only screen and (min-width: 768px) {
       h1 {
-        font-size: 55px;
+        font-size: 48px;
       }
       .subheading {
         font-size: 30px;
