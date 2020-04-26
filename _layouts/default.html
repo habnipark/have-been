@@ -31,11 +31,44 @@
             attribution=setup_tool
             page_id="111089217145833"
             theme_color="#000000"
-            logged_in_greeting="안녕하세요! HAVE_BEEN.com을 찾아주셔서 감사합니다!"
-            logged_out_greeting="안녕하세요! HAVE_BEEN.com을 찾아주셔서 감사합니다!">
+            logged_in_greeting="안녕하세요! 합니에게 궁금한 것이 있으시다면 무엇이든 물어보세요!"
+            logged_out_greeting="안녕하세요! 합니에게 궁금한 것이 있으시다면 무엇이든 물어보세요!">
           </div>
       <!-- End Load Facebook SDK for JavaScript -->
 
+      <!-- Chatfuel -->
+      <script>
+        var div = document.createElement('div');
+        div.className = 'fb-customerchat';
+        div.setAttribute('page_id', '111089217145833');
+        div.setAttribute('ref', '');
+        document.body.appendChild(div);
+        window.fbMessengerPlugins = window.fbMessengerPlugins || {
+          init: function () {
+            FB.init({
+              appId            : '1678638095724206',
+              autoLogAppEvents : true,
+              xfbml            : true,
+              version          : 'v3.3'
+            });
+          }, callable: []
+        };
+        window.fbAsyncInit = window.fbAsyncInit || function () {
+          window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+          window.fbMessengerPlugins.init();
+        };
+        setTimeout(function () {
+          (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        }, 0);
+      </script>
+      <!-- Chatfuel END -->
   {% include navbar.html %}
 
   {{ content }}
