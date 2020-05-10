@@ -42,7 +42,8 @@ description: "모델 한혜진의 단독 디지털 런웨이 100벌 챌린지 : 
 <br>
 
 <h3>코로나와 디지털 : 코로나시대에서 디지털의 의미</h3>
-<iframe width="600" height="400" src="https://www.youtube.com/embed/8291mvKHct8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{% include youtube.html id="8291mvKHct8" %}
 
 ‘엥; 저 억지는 뭐야,,;’
 
@@ -72,7 +73,7 @@ description: "모델 한혜진의 단독 디지털 런웨이 100벌 챌린지 : 
 
  즉, 성공적인 코로나19 대처로 전 세계적인 주목을 받은 한국에서, 모델 한혜진의 색다르고 (명확하게) 독보적인 도전은 ‘한국의 직접적 대처 외(후)에 다방면으로 파생되는 문화특화적인 솔루션’의 한 예시가 되는 것과 동시에 한혜진의 ‘1인 디지털 런웨이’ 그 자체로도 패션업계에 유의미한 타이틀이 되기 때문이라는 의미이다.
 
-<iframe width="600" height="400" src="https://www.youtube.com/embed/hvxTijZmc4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtube.html id="hvxTijZmc4M" %}
 
 <br>
 
