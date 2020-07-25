@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /marketing-bootstrap-01/
-content_id: 'mk005'
+content_id: mk005
 title: '마케터의 HTML/CSS 공부 : What is Bootstrap? ’부트스트랩’이 뭔가요?'
 date: 2020-04-05 23:00:00 +09:00
 feature: '/img/posts/006/06thumb.jpg'

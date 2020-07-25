@@ -1,7 +1,7 @@
 ---
 layout: post
 permalink: /personalbranding-pb-01/
-content_id: 'pb002'
+content_id: pb002
 title: '퍼스널브랜딩의 중요성 : 마케터의 퍼스널 브랜딩'
 date: 2020-04-19 13:00:00 +09:00
 feature: '/img/posts/007/07thumb.jpg'
