@@ -54,3 +54,13 @@ layout: default
   <!-- Disqus comment -->
   {% include disqus.html %}
   <!-- End Disqus -->
+
+  <!-- GTM dL Tag -->
+    <script>
+     dataLayer.push({
+      'event' : 'viewContent'
+      'contentTitle' : '{{ post.title }}',
+      'contentId': '{{ post.content_id }}',
+     });
+    </script>
+  <!-- End GTM dL Tag -->

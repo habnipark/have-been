@@ -1,6 +1,7 @@
 ---
 layout: post
 permalink: /Insight-digital-runway/
+content_id: 'is001'
 title: '한혜진 2020 FW 디지털 패션위크 : 코로나 시대의 디지털 패션위크 (디지털 런웨이)(COVID-19 Korean Digital fashion week, Digital runway)'
 date: 2020-05-09 12:00:00 +09:00
 feature: '/img/posts/009/09thumb.jpg'
